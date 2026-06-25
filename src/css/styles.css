@@ -7,12 +7,148 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+body {
+  font-family: sans-serif;
+}
+
+/* FORM */
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+
+.form input {
+  width: 272px;
+  height: 20px;
+
+  padding: 9px 16px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  outline: none;
+}
+
+.form input:hover {
+  border-color: #000;
+}
+
+.form input:focus {
+  border-color: #4e75ff;
+}
+
+.form button {
+  width: 91px;
+  height: 40px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #4e75ff;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #6c8cff;
+}
+
+/* GALLERY */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+
+  list-style: none;
+
+  padding: 0;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  width: 360px;
+
+  border: 1px solid #808080;
+}
+
+.gallery-link {
+  display: block;
+}
+
+.gallery-image {
+  display: block;
+
+  width: 100%;
+  height: 200px;
+
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 4px 0;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  margin: 0;
+
+  font-size: 12px;
+}
+
+.info-item b {
+  margin-bottom: 4px;
+}
+
+/* LOADER */
+
+.loader {
+  text-align: center;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 32px auto;
+  padding: 8px 16px;
+
+  background-color: #4e75ff;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: background-color 250ms ease;
+}
+
+.load-more-btn:hover,
+.load-more-btn:focus {
+  background-color: #6c8cff;
+}
