@@ -18,6 +18,8 @@ const loadMoreBtn = document.querySelector('.load-more-btn');
 let page = 1;
 let query = '';
 
+hideLoadMoreButton();
+
 form.addEventListener('submit', handleSubmit);
 loadMoreBtn.addEventListener('click', handleLoadMore);
 
